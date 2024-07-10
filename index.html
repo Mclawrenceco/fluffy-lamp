@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tunde's personal webpage showcasing skills, projects, and contact information.">
+    <meta name="keywords" content="Tunde, personal webpage, software developer, projects, contact">
     <title>Tunde's Personal Webpage</title>
     <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --primary-color: #00ccff;
+            --header-footer-bg: #1e1e1e;
+            --border-color: #333;
+        }
+
         body {
-            background-color: #121212;
-            color: #ffffff;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #1e1e1e;
+
+        header, footer {
+            background-color: var(--header-footer-bg);
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+
+        header h1, footer p {
             margin: 0;
-            color: #00ccff;
+            color: var(--primary-color);
         }
+
         nav {
             text-align: center;
             padding: 10px;
         }
+
         nav a {
-            color: #00ccff;
+            color: var(--primary-color);
             margin: 0 10px;
             text-decoration: none;
         }
+
+        main {
+            padding: 20px;
+        }
+
         section {
             padding: 20px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid var(--border-color);
         }
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+
         .contact-info a {
-            color: #00ccff;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
@@ -53,10 +65,7 @@
                 display: block;
                 margin: 10px 0;
             }
-            section {
-                padding: 15px;
-            }
-            footer {
+            main, section, footer {
                 padding: 15px;
             }
         }
@@ -65,10 +74,7 @@
             header h1 {
                 font-size: 1.5em;
             }
-            section {
-                padding: 10px;
-            }
-            footer {
+            main, section, footer {
                 padding: 10px;
             }
         }
@@ -85,34 +91,36 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Tunde. I'm based in Ibadan, Nigeria. I'm a computer science student and software developer with a passion for technology, music, and movies. I aim to build a great career in computer programming.</p>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>ReactJS</li>
-            <li>TailwindCSS</li>
-            <li>Python</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Some of my notable projects include a dynamic calendar app, a Music Collaboration Platform, and a customizable personal productivity dashboard.</p>
-    </section>
-    <section id="blogs">
-        <h2>Blogs</h2>
-        <p>Check out my essays on various topics such as the impact of globalization on developing economies, smart cities, and the development of real AI.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me via email at <a href="mailto:tundeafoo22@gmail.com">tundeafoo22@gmail.com</a>.</p>
-        <p>Connect with me on <a href="https://github.com/mclawrenceco" target="_blank">GitHub</a> and <a href="https://x.com/mclawrenceco" target="_blank">X</a>.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Tunde. I'm based in Ibadan, Nigeria. I'm a computer science student and software developer with a passion for technology, music, and movies. I aim to build a great career in computer programming.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>TailwindCSS</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Some of my notable projects include a dynamic calendar app, a Music Collaboration Platform, and a customizable personal productivity dashboard.</p>
+        </section>
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <p>Check out my essays on various topics such as the impact of globalization on developing economies, smart cities, and the development of real AI.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me via email at <a href="mailto:tundeafoo22@gmail.com" aria-label="Email Tunde">tundeafoo22@gmail.com</a>.</p>
+            <p>Connect with me on <a href="https://github.com/mclawrenceco" target="_blank" aria-label="Tunde's GitHub">GitHub</a> and <a href="https://x.com/mclawrenceco" target="_blank" aria-label="Tunde's Twitter">X</a>.</p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Tunde's Personal Webpage</p>
     </footer>
