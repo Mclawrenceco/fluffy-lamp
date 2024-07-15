@@ -13,10 +13,6 @@ body {
     padding: 0 1rem;
 }
 
-.header a {
-    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-}
-
 .hero {
     background: #007aff;
     color: #fff;
@@ -75,24 +71,33 @@ body {
 }
 
 @media (max-width: 768px) {
+    .nav-link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
     #nav-menu {
         display: none;
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-link {
-        margin: 0.5rem 0;
+    #nav-menu.show {
+        display: flex;
     }
 
-    #nav-menu.active {
-        display: flex;
+    .container {
+        padding: 0 0.5rem;
     }
 }
 
 @media (min-width: 769px) {
-    #nav-menu {
+    .nav {
         display: flex;
         justify-content: space-between;
+    }
+
+    .container {
+        padding: 0 1rem;
     }
 }
