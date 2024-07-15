@@ -3,12 +3,6 @@
     background-color: #1a202c; /* bg-gray-900 */
     color: #ffffff; /* text-white */
     font-family: sans-serif; /* font-sans */
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.body.light-mode {
-    background-color: #ffffff; /* light mode background */
-    color: #1a202c; /* light mode text */
 }
 
 /* Header styles */
@@ -38,20 +32,6 @@
 
 .nav-link:hover {
     text-decoration: underline; /* hover:underline */
-}
-
-/* Theme toggle button */
-.theme-toggle {
-    margin-top: 1rem; /* mt-4 */
-    padding: 0.5rem 1rem; /* p-2 px-4 */
-    background-color: #63b3ed; /* bg-blue-400 */
-    color: #ffffff; /* text-white */
-    border: none;
-    cursor: pointer;
-}
-
-.theme-toggle:hover {
-    background-color: #3182ce; /* hover:bg-blue-500 */
 }
 
 /* Main content styles */
@@ -108,22 +88,4 @@
 
 .footer-text {
     color: #63b3ed; /* text-blue-400 */
-}
-
-/* Back-to-top button */
-.back-to-top {
-    position: fixed;
-    bottom: 2rem; /* bottom-8 */
-    right: 2rem; /* right-8 */
-    padding: 0.5rem 1rem; /* p-2 px-4 */
-    background-color: #63b3ed; /* bg-blue-400 */
-    color: #ffffff; /* text-white */
-    border: none;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
-}
-
-.back-to-top:hover {
-    background-color: #3182ce; /* hover:bg-blue-500 */
 }
