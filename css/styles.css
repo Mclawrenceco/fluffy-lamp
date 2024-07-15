@@ -64,20 +64,36 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav {
+    .nav-link {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #mobile-nav.show {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .nav-link {
-        margin: 0.5rem 0;
-    }
 }
 
 @media (min-width: 769px) {
-    .nav {
-        display: flex;
-        justify-content: space-between;
+    .nav-link {
+        margin: 0 1rem;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: none;
     }
 }
