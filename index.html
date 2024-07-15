@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,29 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-gray-100 text-gray-800 font-sans">
     <header class="bg-gray-900 text-white">
         <div class="container mx-auto flex items-center justify-between py-4">
             <a href="#" class="text-xl font-bold">Mclawrenceco</a>
-            <nav class="flex space-x-4">
+            <nav class="hidden md:flex space-x-4">
                 <a href="#about" class="nav-link">About Me</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#blogs" class="nav-link">Blogs</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
+            <button id="nav-toggle" class="md:hidden">Menu</button>
         </div>
+        <nav id="mobile-nav" class="md:hidden flex-col hidden">
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#blogs" class="nav-link">Blogs</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
     </header>
+
     <main>
         <section class="hero bg-blue-500 text-white py-20">
             <div class="container mx-auto text-center">
@@ -29,6 +40,7 @@
                 <p class="mt-4 text-xl">Showcasing skills, projects, and contact information</p>
             </div>
         </section>
+
         <article id="about" class="container mx-auto py-12">
             <h2 class="text-3xl font-semibold mb-4">About Me</h2>
             <p class="leading-loose mb-4">
@@ -44,6 +56,7 @@
                 Beyond my technical pursuits, I have a profound love for music, movies, and soccer. Music has always been a constant companion, providing a soundtrack to my life’s journey. It not only offers a creative escape but also inspires my problem-solving abilities by encouraging me to think outside the box. Movies, with their ability to tell compelling stories, have shaped my imagination and influenced my approach to project design and development.
             </p>
         </article>
+
         <section id="skills" class="bg-gray-200 py-12">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-semibold mb-4">Skills</h2>
@@ -57,28 +70,34 @@
                 </ul>
             </div>
         </section>
+
         <article id="projects" class="container mx-auto py-12">
             <h2 class="text-3xl font-semibold mb-4">Projects</h2>
             <p class="leading-loose">Some of my notable projects include a dynamic calendar app, a Music Collaboration Platform, and a customizable personal productivity dashboard.</p>
         </article>
+
         <section id="blogs" class="bg-gray-200 py-12">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-semibold mb-4">Blogs</h2>
                 <p class="leading-loose">Check out my essays on various topics such as the impact of globalization on developing economies, smart cities, and the development of real AI.</p>
             </div>
         </section>
+
         <section id="contact" class="container mx-auto py-12">
             <h2 class="text-3xl font-semibold mb-4">Contact</h2>
             <p class="leading-loose">You can reach me via email at <a href="mailto:tundeafoo22@gmail.com" class="text-blue-500 hover:underline">tundeafoo22@gmail.com</a>.</p>
             <p class="leading-loose">Connect with me on <a href="https://github.com/mclawrenceco" target="_blank" class="text-blue-500 hover:underline">GitHub</a> and <a href="https://x.com/mclawrenceco" target="_blank" class="text-blue-500 hover:underline">X</a>.</p>
         </section>
     </main>
+
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 Mclawrenceco</p>
         </div>
     </footer>
+
     <button id="back-to-top" class="back-to-top fixed bottom-4 right-4 bg-blue-500 text-white py-2 px-4 rounded">Top</button>
     <script src="scripts.js"></script>
 </body>
+
 </html>
