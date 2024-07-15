@@ -1,12 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-});
-
 // Back to top button
 const backToTopButton = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
@@ -18,4 +9,11 @@ window.addEventListener('scroll', () => {
 });
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Navbar toggle
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
 });
