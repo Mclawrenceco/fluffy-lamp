@@ -1,0 +1,91 @@
+/* General styles */
+.body {
+    background-color: #1a202c; /* bg-gray-900 */
+    color: #ffffff; /* text-white */
+    font-family: sans-serif; /* font-sans */
+}
+
+/* Header styles */
+.header {
+    background-color: #2d3748; /* bg-gray-800 */
+    padding: 1.5rem; /* p-6 */
+    text-align: center; /* text-center */
+}
+
+.site-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #63b3ed; /* text-blue-400 */
+}
+
+.nav {
+    margin-top: 1rem; /* mt-4 */
+    display: flex; /* flex */
+    justify-content: center; /* justify-center */
+    gap: 1.5rem; /* space-x-6 */
+}
+
+.nav-link {
+    color: #63b3ed; /* text-blue-400 */
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* hover:underline */
+}
+
+/* Main content styles */
+.main {
+    padding: 1.5rem; /* p-6 */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* space-y-12 */
+}
+
+/* Section styles */
+.section {
+    padding: 1.5rem 0; /* py-6 */
+    border-bottom: 1px solid #4a5568; /* border-b border-gray-700 */
+}
+
+.section-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #63b3ed; /* text-blue-400 */
+}
+
+.section-content {
+    margin-top: 1rem; /* mt-4 */
+    line-height: 1.75; /* leading-loose */
+}
+
+/* Skills list styles */
+.skills-list {
+    margin-top: 1rem; /* mt-4 */
+    list-style-type: disc; /* list-disc */
+    padding-left: 1.5rem; /* list-inside */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* space-y-2 */
+}
+
+/* Contact link styles */
+.contact-link {
+    color: #63b3ed; /* text-blue-400 */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* hover:underline */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #2d3748; /* bg-gray-800 */
+    padding: 1.5rem; /* p-6 */
+    text-align: center; /* text-center */
+}
+
+.footer-text {
+    color: #63b3ed; /* text-blue-400 */
+}
