@@ -16,3 +16,10 @@ window.addEventListener('scroll', () => {
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Mobile nav toggle
+const navToggle = document.getElementById('nav-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+navToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('show');
+});
