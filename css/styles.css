@@ -15,9 +15,9 @@ header {
 
 .download-cv {
     background-color: #333; /* Primary color */
+    color: #fff; 
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 16px;
     border-radius: 5px; /* Adjust as needed for your layout */
     display: inline-block;
     margin-top: 10px;
