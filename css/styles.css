@@ -13,6 +13,19 @@ header {
     text-align: center;
 }
 
+.download-cv {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-cv:hover {
+    background-color: #555;
+}
+
 .profile img {
     width: 150px;
     border-radius: 50%;
