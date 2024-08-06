@@ -15,9 +15,10 @@ header {
 
 .download-cv {
     background-color: #333; /* Primary color */
-    color: #fff; 
-    text-decoration: none;
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
     padding: 10px 20px;
+    font-size: 16px;
     border-radius: 5px; /* Adjust as needed for your layout */
     display: inline-block;
     margin-top: 10px;
@@ -25,7 +26,11 @@ header {
 }
 
 .download-cv:hover {
-    background-color: #0c5dab; /* Darker shade for hover effect */
+    background-color: #555; /* Darker shade for hover effect */
+}
+
+.download-cv:visited {
+    color: #fff; /* Ensure visited links don't change color */
 }
 
 .profile img {
@@ -60,7 +65,7 @@ section {
 
 footer {
     background: #333; /* Adjust this color to match your color scheme */
-    color: none;
+    color: #fff;
     text-align: center;
     padding: 1em 0;
     position: relative;
