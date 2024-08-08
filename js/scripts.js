@@ -15,14 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.remove('active');
             if (link.getAttribute('href').includes(current)) {
                 link.classList.add('active');
-document.getElementById('download-cv').addEventListener('click', function () {
-    const link = document.createElement('a');
-    link.href = 'assets/Babatunde\'s C.V.pdf';
-    link.download = 'Babatunde\'s C.V.pdf';
-    link.click();
-});
-
             }
         });
+    });
+
+    // Add the event listener for the CV download button
+    document.getElementById('download-cv').addEventListener('click', function () {
+        const link = document.createElement('a');
+        link.href = 'assets/Babatunde\'s C.V.pdf';
+        link.download = 'Babatunde\'s C.V.pdf';
+        link.click();
     });
 });
